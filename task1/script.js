@@ -1,15 +1,17 @@
-﻿var prost = [ 2 ],
-    chislo = 2;
-while ( chislo <= 100) {
-    var chislo_ver = 1;
-    for ( var i = 0; i < prost.length; i++) {
-        if ( chislo % prost[ i ] === 0) {
-            chislo_ver = 0;
-        }
-    }
-    if ( chislo_ver === 1 ) {
-        prost.push( chislo );
-    }
-    chislo++;
+﻿var num = prompt('Введите число');
+function createObject(num) {
+	if (num>999) {
+		console.log ('Число не должно быть больше 999');
+		var numObj={};
+		}
+	else{
+		var numObj={
+			hundreds: (num-num%100)/100,
+			tens: (num%100-num%10)/10,
+			ones: num%10
+		};
+		console.log ('Единицы '+numObj.ones+' десятки '+numObj.tens+' сотни '+numObj.hundreds);
+		}
+	return numObj;
 }
-console.log ( prost );
+createObject(num);
