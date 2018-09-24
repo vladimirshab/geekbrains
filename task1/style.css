@@ -1,29 +1,25 @@
-﻿h1, p, .brim-lines, .brim-columns {
-    font-family: tahoma, sans-serif;
-    font-weight: 400;
+* {margin: 0; padding: 0;}
+#wrapper {
+  width: 50%;
+  margin: 10px;
 }
-h1, p, .table-chessBoard {
-    text-align: center;
+#cart_content {
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #060;
 }
-td img {
-    vertical-align: bottom;
-    height: 48px;
+.item_box {
+  border: 1px solid #999;
+  margin-bottom: 10px;
+  padding: 5px;
 }
-.table-chessBoard {
-    margin: auto;
-    width: 40%;
-    border-collapse: collapse;
+.shopping_list {
+	width: 100%;
+  margin-top: 10px;
+	border-collapse: collapse;
 }
-.cell-field {
-    height: 50px;
-    width: 50px;
-    background-color: #fef5e7;
-}
-.black {
-    background-color: #814d40;
-}
-.brim-lines, .brim-columns {
-    vertical-align: middle;
-    background-color: #fff;
-    color: #777;
+.shopping_list td,
+.shopping_list th {
+	padding: 10px;
+	border: 1px solid #AAAAAA;
 }
